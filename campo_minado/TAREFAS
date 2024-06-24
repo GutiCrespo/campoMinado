@@ -1,0 +1,34 @@
+
+❌ - Não Feito
+🕐 - Em andamento
+✅ - Feito
+
+TAREFAS:
+
+✅ Retirar expansão de terreno
+✅ Adicionar contador no local selecionado
+✅ Corrigir o "Iniciar Novamente"
+✅ Corrigir o "Finalizar Jogo"
+✅ Criar Menu de opções
+    ✅ 1°) Iniciar Jogo
+    ✅ 2°) Ver Ranking
+    ✅ 3°) Regras e Instruções
+    ✅ 4°) Sair do jogo 
+✅ Criar Iniciar Jogo
+    ✅ Solicitar Nome do Jogador
+    ✅ Guardar tempo de início
+    ✅ Guardar tempo de finalização
+    ✅ Guardar número de acertos
+✅ Criar Ranking
+    ✅ Exibir lista de jogadores em ordem de "melhor posição"
+            Posição = Número de Acertos (desempate = tempo total)
+✅ Criar regras e Instruções
+    ✅ Copiar regras da internet
+    ✅ Dar print
+✅ Criar sair do jogo 
+    ✅ Frase de despedida
+    ✅ temporizador 5segs
+    ✅ exit do programa
+
+❌ Adicionar "rostinho" em cima do campo
+❌ Adicionar enfeites estéticos

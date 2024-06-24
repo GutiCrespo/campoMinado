@@ -1,0 +1,7 @@
+Cláudio;15;71.287
+Guti;3;7.180
+Gustavo;2;7.010
+Guti ;1;5.003
+Rodrigo;1;6.061
+João;0;3.443
+Teste;0;3.709
