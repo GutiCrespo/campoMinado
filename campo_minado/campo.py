@@ -17,7 +17,7 @@ tempField = "🟥"
 score = 0
 posicao = 0
 
-def iniciarJogo():
+def menu():
     os.system("cls")    
     print("")
     print("Boas-vindas ao Campo Minado!")
@@ -42,6 +42,10 @@ def iniciarJogo():
         print("Obrigado por jogar. Volte sempre!")
         time.sleep(1)
         sys.exit()
+    else:
+        print(f"Por favor, insira uma das opções acima")
+        time.sleep(2)
+        menu()
 
 def gameStart():
     global score
@@ -100,11 +104,11 @@ def showRank():
             print(f"{posicao:>7} {jogador:>20} {acerto:>10} {tempo:>12.3f}")
 
         input("\nPressione Enter para voltar ao menu...")
-        iniciarJogo()
+        menu()
     else:
         print("Nenhum ranking disponível. Jogue uma partida primeiro.")
         time.sleep(2)
-        iniciarJogo()
+        menu()
 
 def showRules():
     os.system("cls")
@@ -114,7 +118,7 @@ def showRules():
     print("3. Se você revelar um quadrado vazio, ele mostrará o número de bombas adjacentes.")
     print("4. Use essa informação para deduzir quais quadrados são seguros.")
     input("\nPressione Enter para voltar ao menu...")
-    iniciarJogo()
+    menu()
 
 def setTable():
     global field
@@ -218,7 +222,7 @@ def endGame(nome, hora_inicial):
         print(f"Obrigado {nome} pela tentativa.")
         print(f"Volte sempre!")
         time.sleep(3.5)
-        iniciarJogo()
+        menu()
     elif opcao == "S":
         nome, hora_inicial = gameStart()  # Inicia o jogo e captura nome e hora inicial
         setTable()
@@ -228,4 +232,4 @@ def endGame(nome, hora_inicial):
         print("Por favor, insira apenas 'S' ou 'N'")
         endGame(nome, hora_inicial)
 
-iniciarJogo()
+menu()
